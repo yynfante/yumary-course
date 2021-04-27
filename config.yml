@@ -1,0 +1,16 @@
+title: yumary
+description: esto es un repositorio donde voy a cargar la informacion necesaria
+template:
+  repo: yumary-template
+  name: yumary
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
